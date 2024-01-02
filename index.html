@@ -22,7 +22,8 @@
     <p>This is a placeholder text for your web page content.</p>
     <!-- Button to go on vacation -->
     <a href="https://vytautasj.github.io/Eskimi/vacation" class="button">Press Here to Go on Vacation</a>
-    <!-- You might want to add some styles for your button -->
+
+    <!-- Styles for your button and page layout -->
     <style>
         .button {
             display: inline-block;
@@ -47,13 +48,33 @@
             transform: translateY(4px);
         }
 
-        /* Add a large bottom padding to create scrolling */
-        body {
-            min-height: 100vh;
-            padding-bottom: 1000px;
+        /* Adjust the layout */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .content {
+            min-height: calc(100vh - 40px); /* Adjust 40px based on your footer height */
+            /* Your content styling here */
+        }
+
+        .footer {
+            height: 40px; /* Adjust as needed */
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
-    <!-- End of Page Text -->
-    <p style="text-align: center; margin-top: 50px;">End of Page</p>
 </body>
+<!-- Main content of your page -->
+<div class="content">
+    <!-- All your existing content goes here -->
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    End of Page
+</div>
 </html>

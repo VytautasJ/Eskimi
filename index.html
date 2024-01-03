@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Website Title</title>
+    <title>Eskimi & GA Test website</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMMNQ3K2Q3"></script>
     <script>
@@ -16,41 +16,77 @@
         esk('init', '13294');
     </script>
     <!-- End Eskimi DSP Pixel Code -->
-    <style>
-        /* Your existing styles */
-
-        /* Additional styles for the form */
-        .form-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <h1>Welcome to My Website</h1>
-    <p>This is a placeholder text for your web page content.</p>
+    <p>2024/01/03 You can now scroll on the website. There's a mark that says 'half scrolled'</p>
     <!-- Button to go on vacation -->
     <a href="https://vytautasj.github.io/Eskimi/vacation" class="button">Press Here to Go on Vacation</a>
 
-    <!-- Form for text input and submit button -->
-    <div class="form-container">
-        <form id="myForm">
-            <input type="text" id="textInput" placeholder="Enter your text here">
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <!-- Styles for your button and page layout -->
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
 
-    <!-- Your existing styles and content -->
+        .button:hover {background-color: #3e8e41}
 
-    <script>
-        // JavaScript to handle form submission
-        document.getElementById('myForm').onsubmit = function(event) {
-            event.preventDefault(); // Prevents the default form submit action (page reload or redirect)
-            var inputText = document.getElementById('textInput').value;
-            console.log("Submitted Text: " + inputText); // You can handle the text as needed
-            // Clear the input field after submission
-            document.getElementById('textInput').value = '';
-        };
-    </script>
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        /* Adjust the layout for longer scrolling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .content {
+            min-height: 1200vh; /* Adjusted for even longer scroll */
+            /* Your content styling here */
+        }
+
+        .half-scrolled {
+            position: relative;
+            top: 700vh; /* Position after 700vh of scrolling */
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .footer {
+            height: 40px; /* Adjust as needed */
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </body>
+<!-- Main content of your page -->
+<div class="content">
+    <!-- All your existing content goes here -->
+    <!-- Text "Half Scrolled" after 700vh -->
+    <div class="half-scrolled">
+        Half Scrolled
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    End of Page
+</div>
 </html>

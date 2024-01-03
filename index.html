@@ -56,8 +56,16 @@
         }
 
         .content {
-            min-height: 300vh; /* Adjust for longer scroll - this sets the height to 3 times the viewport height */
+            min-height: 1200vh; /* Adjusted for even longer scroll */
             /* Your content styling here */
+        }
+
+        .half-scrolled {
+            position: relative;
+            top: 700vh; /* Position after 700vh of scrolling */
+            text-align: center;
+            font-size: 24px;
+            color: #333;
         }
 
         .footer {
@@ -71,6 +79,10 @@
 <!-- Main content of your page -->
 <div class="content">
     <!-- All your existing content goes here -->
+    <!-- Text "Half Scrolled" after 700vh -->
+    <div class="half-scrolled">
+        Half Scrolled
+    </div>
 </div>
 
 <!-- Footer -->
